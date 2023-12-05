@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    padding: 0px 5% 60px;
+}
+body{
+    background: #e6e6ee;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 5%;;
+    background: #fff;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.4);
+}
+.navlist{
+        display: flex;
+ }
+ .navlist .active{
+    color: #b55ada;
+ }
+ .navlist a{
+    margin: 0 30px;
+    font-size: 17px;
+    color: black;
+    transition: all 0.3s ease;
+    position: relative;
+ }
+
+ .navlist a:hover{
+    color: #b55ada;
+ }
+ .navlist i{
+    font-size: 20px;
+    margin-top: 3px;
+ }
+section .locker{
+    height: 40px;
+    border: 1px solid black;
+    padding: 0 10px;
+}
+.table-container{
+    background: #e6e6ee;
+    /* padding: 20px 60px; */
+     border-radius: 20px;
+    /* box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1); */
+}
+/* .table-container:hover{
+ box-shadow: none;
+} */
+table{
+    margin: 25px;
+    background: #fff;
+    border-radius: 10px;
+    transition: all .5s ease;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+ }
+table:hover{
+    box-shadow:none;
+}
+table, th, td{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+     /* padding: 10px; */ 
+}
+thead{
+    box-shadow: 0 5px 10px #dcdcdc ;
+}
+tbody{
+        border-radius: 10px;
+}
+th{
+    padding: .8rem 1.7rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+    color: #808080 ;
+}
+td{
+     padding: 1rem 2rem;
+    color: #808080;
+    font-size: 13px;
+}
+tr:nth-child(even){
+    background: #f8f8ff;
+}
+.tables{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px; /* Could be more or less, depending on screen size */
+}
+
+    /* The Close Button */
+    .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content h2{
+    position: relative;
+    font-size: 26px;
+    font-weight: 700;
+    width: 90%;
+}
+.modal-content h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #9b59b6;
+}
+.modal-content p{
+    text-align: center;
+    color: green;
+    font-size: 15px;
+    font-weight: 500;
+}
+.modal-content input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+}
+.modal-content .input-box{
+    width: 100%;
+    margin-bottom: 15px;
+    }
+.modal-content .input-box label{
+    font-weight: 500;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+.modal-content .input-box input:focus{
+    border-color: #9b59b6;
+}
+input[type="file"]{
+    display: none;
+}
+.submit{
+    width: 100%;
+    height: 45px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.submit:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+.edit{
+    background: #4FFFB0;
+    padding: 0.1rem 0.3rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: all .2s ease;
+    margin-right: 3px;
+}
+.edit:hover{
+    color: white;
+    transform: scale(1.1);
+}
+.lockernum{
+    font-size: 17px;
+    font-weight: 800;
+}
+.delete{
+    background: #fd5c63;
+    padding: 0.1rem 0.3rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: all .2s ease;
+
+}
+.delete:hover{
+    color: white;
+    transform: scale(1.1);
+}
